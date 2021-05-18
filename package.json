@@ -1,0 +1,20 @@
+{
+  "name": "ts-school-project",
+  "version": "1.0.0",
+  "description": "study project for clean code and clean arch course",
+  "main": "index.js",
+  "scripts": {
+    "tsc:init": "tsc --init",
+    "build": "tsc",
+    "test": "tsc && jest dist/"
+  },
+  "author": "vaahxx",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^26.6.3"
+  }
+}
