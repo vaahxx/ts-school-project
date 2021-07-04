@@ -1,20 +1,27 @@
 {
-  "name": "ts-school-project",
+  "name": "projeto1",
   "version": "1.0.0",
-  "description": "study project for clean code and clean arch course",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "tsc:init": "tsc --init",
-    "build": "tsc",
-    "test": "tsc && jest dist/"
+    "tsc:build": "tsc",
+    "test": "tsc && jest ./dist --forceExit",
+    "test:enrollstudent": "tsc && jest ./dist/test/EnrollStudent.test.js --forceExit",
+    "test:getenrollment": "tsc && jest ./dist/test/GetEnrollment.test.js --forceExit",
+    "test:cancelenrollment": "tsc && jest ./dist/test/CancelEnrollment.test.js --forceExit",
+    "test:payinvoice": "tsc && jest ./dist/test/PayInvoice.test.js --forceExit",
+    "main": "tsc && node ./dist/main/main",
+    "test:coverage": "tsc && jest ./dist --coverage --forceExit"
   },
-  "author": "vaahxx",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^4.2.4"
-  },
-  "devDependencies": {
+    "@types/express": "^4.17.12",
     "@types/jest": "^26.0.23",
-    "jest": "^26.6.3"
+    "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "pg-promise": "^10.10.2",
+    "typescript": "^4.2.4"
   }
 }
